@@ -1,0 +1,70 @@
+.projects {
+  padding: var(--spacing-3xl) 0;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.projectCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.projectTitle {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.projectDescription {
+  flex: 1;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-secondary);
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.links {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: auto;
+}
+
+.link {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  transition: color var(--transition-fast);
+}
+
+.link:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

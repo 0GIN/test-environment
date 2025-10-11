@@ -1,0 +1,7 @@
+.animatedHeading {
+  overflow: hidden;
+}
+
+.letter {
+  display: inline-block;
+}

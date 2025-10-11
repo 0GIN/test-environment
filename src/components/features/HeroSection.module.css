@@ -1,0 +1,35 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--spacing-2xl) var(--spacing-lg);
+}
+
+.content {
+  max-width: 800px;
+}
+
+.subtitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-secondary);
+  margin: var(--spacing-lg) 0 var(--spacing-2xl);
+}
+
+.buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 80vh;
+  }
+  
+  .subtitle {
+    font-size: var(--font-size-lg);
+  }
+}
