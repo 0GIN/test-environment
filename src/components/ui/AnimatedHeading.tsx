@@ -9,7 +9,7 @@ interface AnimatedHeadingProps {
 export function AnimatedHeading({ text, className = '' }: AnimatedHeadingProps) {
   const letters = text.split('');
   
-  const container = {
+  const container: any = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -19,7 +19,7 @@ export function AnimatedHeading({ text, className = '' }: AnimatedHeadingProps) 
     },
   };
   
-  const child = {
+  const child: any = {
     hidden: {
       opacity: 0,
       y: 20,

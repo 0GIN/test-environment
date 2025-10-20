@@ -30,6 +30,11 @@ export function Header() {
               </HashLink>
             </li>
             <li>
+              <HashLink smooth to="/gpt-demo" className={styles.navLink}>
+                GPT Demo
+              </HashLink>
+            </li>
+            <li>
               <HashLink smooth to="#contact" className={styles.navLink}>
                 Kontakt
               </HashLink>
